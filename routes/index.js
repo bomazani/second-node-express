@@ -8,14 +8,14 @@ router.get('/', (req, res) => {
 	res.render('index', {text: 'This is the dynamic data. Open index.js from the routes directory to see.'})
 })
 
-router.post('/post', (req, res) => {
-	const body = req.body //normally comes from a POST form
+// router.post('/post', (req, res) => {
+// 	const body = req.body //normally comes from a POST form
 
-	res.json({
-		confirmation: 'success',
-		data: body
-	})
-})
+// 	res.json({
+// 		confirmation: 'success',
+// 		data: body
+// 	})
+// })
 
 // router.get('/query',(req, res)=> {
 // 	const name = req.query.name
