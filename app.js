@@ -29,7 +29,6 @@ const index = require('./routes/index')
 
 // set routes
 app.use('/', index)
-app.use('/api', api) // sample API Routes
 
 
 module.exports = app
