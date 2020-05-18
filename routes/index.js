@@ -10,7 +10,7 @@ router.get('/:path',(req, res)=> {
 	const path = req.params.path
 
 	res.json({
-		data: 'This is a test response.'
+		data: path
 	})
 })
 
