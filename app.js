@@ -26,7 +26,6 @@ app.use(vertex.setContext(process.env))
 
 // import routes
 const index = require('./routes/index')
-const api = require('./routes/api')
 
 // set routes
 app.use('/', index)
