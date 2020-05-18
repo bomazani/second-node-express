@@ -14,4 +14,15 @@ router.get('/:path',(req, res)=> {
 	})
 })
 
+router.get('/:profile/:username',(req, res)=> {
+	const profile = req.params.profile
+	const username = req.params.username
+
+
+	res.json({
+		profile: profile,
+		username: username
+	})
+})
+
 module.exports = router
