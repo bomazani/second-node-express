@@ -6,6 +6,14 @@ router.get('/', (req, res) => {
 	res.render('index', {text: 'This is the dynamic data. Open index.js from the routes directory to see.'})
 })
 
+router.get('/query',(req, res)=> {
+	const name = req.query.name
+
+	res.json({
+		name: name
+	})
+})
+
 router.get('/:path',(req, res)=> {
 	const path = req.params.path
 
