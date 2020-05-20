@@ -26,11 +26,11 @@ app.use(vertex.setContext(process.env))
 
 // import routes
 const index = require('./routes/index')
-const api = require('./routes/api')
+const register = require('./routes/register')
 
 // set routes
 app.use('/', index)
-app.use('/api', api) // sample API Routes
+app.use('/register', register)
 
 
 module.exports = app

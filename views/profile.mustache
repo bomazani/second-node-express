@@ -1,0 +1,26 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+        <h1>Name: {{name}}</h1>
+        <h2>Company: {{company}}</h2>
+        <h3>Languages:</h3>
+        <ol>
+            {{#languages}}
+            <li>
+               {{.}} 
+            </li>
+            {{/languages}}
+        </ol>
+
+        <form action="/addprofile" method="POST"> 
+            <input type="text" name="name" placeholder="Name" /><br />
+            <input type="text" name="username" placeholder="Username" /><br />
+            <input type="text" name="company" placeholder="Company" /><br />
+            <input type="text" name="languages" placeholder="Languages" /><br />
+            <input type="submit" value="Add Profile" />
+        </form>
+
+    </body>
+</html>
